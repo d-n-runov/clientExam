@@ -89,10 +89,11 @@ public class loginPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        // TODO add your handling code here:
+        this.dispose();
+        clientexam.ClientExam.callFrames("registrationFrame");
     }//GEN-LAST:event_jLabel1MouseClicked
 
-    public static void main(String args[]) {
+    public static void main() {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
