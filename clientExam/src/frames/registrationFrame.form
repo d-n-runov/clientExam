@@ -159,7 +159,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x41a;&#x43b;&#x430;&#x441;&#x441;:"/>
+            <Property name="text" type="java.lang.String" value="&#x413;&#x440;&#x443;&#x43f;&#x43f;&#x430;"/>
           </Properties>
         </Component>
       </SubComponents>
