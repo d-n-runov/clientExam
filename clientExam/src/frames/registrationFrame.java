@@ -29,6 +29,11 @@ public class registrationFrame extends javax.swing.JFrame {
         });
 
         jButton1.setText("Регистрация");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Фамилия:");
 
@@ -116,6 +121,14 @@ public class registrationFrame extends javax.swing.JFrame {
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         clientexam.ClientExam.callFrames("loginPage");
     }//GEN-LAST:event_formWindowClosed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String toSend = "<newUser><fio>"+jTextField1.getText()+" ";
+            toSend = toSend + jTextField2.getText()+" ";
+            toSend = toSend + jTextField3.getText();
+            toSend = toSend + "</fio>" + "<login>"+jTextField1.getText()+"</login>";
+            //StoSend = toSend + "<passwd>"+jPasswordField1.getText()+"</passwd></newUser>"
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main() {
         try {
